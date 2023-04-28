@@ -7,6 +7,8 @@ import Navbar from './Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Checkout from './Checkout';
 import MarketPlace from './MarketPlace';
+import Homepage from './Homepage/Homepage';
+import About from './About/About';
 
 function App() {
   const [cartItems, setCartItems] = useState(
@@ -54,6 +56,8 @@ function App() {
         <Route path='/cart' element={<Cart removeAll={removeAll} cartItems={cartItems} removeItem={removeItem} />} />
         <Route path='/products' element={<Product products={products} cartItems={cartItems} addToCart={addToCart} />} />
         <Route path="/marketplace" element={<MarketPlace/>}/>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </div>
   );

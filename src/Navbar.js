@@ -14,8 +14,13 @@ export default function Navbar({ cartItems, removeAll, removeItem }) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a style={{fontWeight: "bolder", color:"darkblue", fontSize: "large", fontFamily: "'Sigmar', cursive"}} className="nav-link" href="/products">
+                            <aside style={{ fontWeight: "bolder", color: "darkblue", fontSize: "large", fontFamily: "'Sigmar', cursive" }} className="nav-link" href="/products">
                                 sOkO
+                            </aside>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/">
+                                Home
                             </a>
                         </li>
                         <li className="nav-item">
@@ -29,12 +34,7 @@ export default function Navbar({ cartItems, removeAll, removeItem }) {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/marketplace">
-                                HomePage
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/marketplace">
+                            <a className="nav-link" href="/about">
                                 About
                             </a>
                         </li>
